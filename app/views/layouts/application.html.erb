@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PortfolioRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+  <body>
+
+  	<%= render 'layouts/navbar' %>
+  	<div class="container-fluid">
+	  	<div class="jumbotron" id="jumbo-yield">
+
+		    <%= yield %>
+
+		 </div>
+	</div>
+    <%= render 'layouts/footer_1' %>
+    <%= render 'layouts/footer_2' %>
+  </body>
+</html>

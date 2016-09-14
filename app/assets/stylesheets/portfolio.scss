@@ -1,0 +1,23 @@
+#picture-area {
+	text-align: center;
+}
+
+.thumbnail {
+	max-width: 400px;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.thumbnail > img {
+	border-top: solid gray 1px;
+}
+
+#picture-area > .thumbnail > p {
+	color: black;
+	font-size: 0.9em;
+}
+

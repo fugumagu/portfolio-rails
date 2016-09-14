@@ -1,0 +1,101 @@
+// Place all the styles related to the Index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* Navbar and footer */
+.top-bottom {
+	background-color: #4b5fad;
+}
+
+.navbar {
+	border-bottom: solid #c8c8ca 10px;
+}
+
+#brand {
+	font-size: 2em;
+}
+
+.tabs {
+	border-bottom: 0;
+}
+
+#brand-link, footer, #navigation > li > a {
+	color: #da9140;
+}
+
+#brand-link:hover, #brand-link:visited, #brand-link:focus {
+	text-decoration: none;
+}
+
+#navigation > li > a:hover, #navigation > li > a:focus {
+	color: white;
+}
+
+#jumbo-footer-1 {
+	margin-bottom: 0;
+	border-top: solid lightgray 3px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	vertical-align: middle;
+}
+
+#jumbo-footer-1 h3 {
+	margin-top: 0;
+}
+
+#made-with, #social-links {
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.made-with-img {
+	max-height: 50px;
+	width: auto;
+	padding: 0 5px;
+}
+
+.fa {
+	color: black;
+}
+
+#social-links ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+
+#social-links ul li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+
+
+/* Body */
+#jumbo-yield {
+	background-color: #62716F;
+	margin-top: 50px;
+}
+
+#jumbo-yield p, #jumbo-yield h2, .hr-white hr, .hr-white i {
+	color: #ecc7a4;
+}
+
+
+hr, .hr-white > i, .hr-black > i {
+	padding: 0 40px;
+}
+
+.hr-white hr {
+	border: solid #ecc7a4 3px;
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+
+
+
+
