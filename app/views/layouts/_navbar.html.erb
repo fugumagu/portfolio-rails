@@ -1,15 +1,16 @@
 <nav class="navbar navbar-default navbar-fixed-top top-bottom">
 	<div class="container">
-		<div class="nav navbar-brand text-left" id="brand">
+		<div class="nav navbar-brand text-left col-md-4" id="brand">
 			<%= link_to "Jeremy Clarkson", root_path, id: "brand-link" %>
 		</div>
 
-
+		<div class="col-md-8">
 			<ul class="nav navbar-nav navbar-right nav-tabs tabs" id="navigation">
 				<li><%= link_to "Home", root_path %></li>
 				<li><%= link_to "Portfolio", portfolio_path %></li>
 				<li><%= link_to "Contact", contact_path %></li>
 			</ul>
+		</div>
 
 	</div>
 </nav>

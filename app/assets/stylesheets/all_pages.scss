@@ -12,8 +12,18 @@
 	border-bottom: solid #c8c8ca 10px;
 }
 
+.nav {
+	display: inline-block;
+}
+
+#navigation > li {
+	float: right;
+}
+
+
 #brand {
 	font-size: 2em;
+	float: left;
 }
 
 .tabs {
@@ -97,5 +107,16 @@ hr, .hr-white > i, .hr-black > i {
 
 
 
+@media only screen and (max-width: 1070px) {
+    #jumbo-yield {
+        margin-top: 111px;
+    }
+}
+
+@media only screen and (min-width: 1071px) and (max-width: 1189px) {
+    #jumbo-yield {
+        margin-top: 50px;
+    }
+}
 
 
