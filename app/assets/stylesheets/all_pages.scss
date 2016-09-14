@@ -5,11 +5,11 @@
 
 /* Navbar and footer */
 .top-bottom {
-	background-color: #4b5fad;
+	background-color: #0e1327;
 }
 
 .navbar {
-	border-bottom: solid #c8c8ca 10px;
+	border-bottom: solid #0e1327 10px;
 }
 
 .nav {
@@ -45,8 +45,8 @@
 #jumbo-footer-1 {
 	margin-bottom: 0;
 	border-top: solid lightgray 3px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	vertical-align: middle;
 }
 
@@ -58,6 +58,8 @@
 	display: inline-block;
     vertical-align: middle;
     float: none;
+    margin-bottom: 10px;
+    padding-top: 8px;
 }
 
 .made-with-img {
@@ -70,6 +72,10 @@
 	color: black;
 }
 
+.link-fa {
+	padding: 0 10px;
+}
+
 #social-links ul {
 	list-style: none;
 	padding-left: 0;
@@ -78,7 +84,6 @@
 
 #social-links ul li {
 	display: inline-block;
-	padding: 0 10px;
 }
 
 
@@ -90,7 +95,7 @@
 }
 
 #jumbo-yield p, #jumbo-yield h2, .hr-white hr, .hr-white i {
-	color: #ecc7a4;
+	color: #F1ECE7;
 }
 
 
@@ -99,7 +104,7 @@ hr, .hr-white > i, .hr-black > i {
 }
 
 .hr-white hr {
-	border: solid #ecc7a4 3px;
+	border: solid #F1ECE7 3px;
 	width: 50%;
 	display: inline-block;
 	margin-bottom: 15px;
@@ -107,13 +112,13 @@ hr, .hr-white > i, .hr-black > i {
 
 
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 509px) {
     #jumbo-yield {
         margin-top: 111px;
     }
 }
 
-@media only screen and (min-width: 1071px) and (max-width: 1189px) {
+@media only screen and (min-width: 1071px) {
     #jumbo-yield {
         margin-top: 50px;
     }
