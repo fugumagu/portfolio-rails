@@ -1,0 +1,23 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.gray-back {
+	background-color: #bbb;
+}
+
+.back-forward-container {
+	padding-top: 10px;
+}
+
+td {
+	padding: 2px;
+}
+
+label, tr, .white-cell {
+	color: white;
+	font-size: 1.4em;
+	border-collapse: separate;
+	padding-right: 10px;
+}

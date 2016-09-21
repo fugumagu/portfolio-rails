@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'index#home'
-  get '/portfolio/', to: 'index#portfolio'
-  get '/contact/', to: 'index#contact'
+  root 'static_pages#home'
+  get '/portfolio/', to: 'static_pages#portfolio'
+  get '/contact/', to: 'static_pages#contact'
 
 
 end
