@@ -1,9 +1,55 @@
 // Place all the styles related to the Index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/**************/
+/* Typography */
+/**************/
+#brand-link, footer, #navigation > li > a {
+	color: #da9140;
+}
+
+#brand-link:hover, #brand-link:visited, #brand-link:focus {
+	text-decoration: none;
+}
+
+#navigation > li > a:hover, #navigation > li > a:focus {
+	color: #F1ECE7;
+}
+
+.fa {
+	color: black;
+}
+
+#jumbo-yield p, #jumbo-yield h2, .hr-white hr, .hr-white i {
+	color: #F1ECE7;
+}
+
+label, tr, .white-cell {
+	color: #F1ECE7;
+	font-size: 1.4em;
+	border-collapse: separate;
+	padding-right: 10px;
+	a {
+		color: #FFF;
+	}
+}
+
+#error_explanation {
+	color: darkred;
+	> h2 {
+		color: darkred;
+		font-size: 1em;
+	}
+}
 
 
+
+
+
+
+/*********************/
 /* Navbar and footer */
+/*********************/
 .top-bottom {
 	background-color: #0e1327;
 }
@@ -20,7 +66,6 @@
 	float: right;
 }
 
-
 #brand {
 	font-size: 2em;
 	float: left;
@@ -28,18 +73,6 @@
 
 .tabs {
 	border-bottom: 0;
-}
-
-#brand-link, footer, #navigation > li > a {
-	color: #da9140;
-}
-
-#brand-link:hover, #brand-link:visited, #brand-link:focus {
-	text-decoration: none;
-}
-
-#navigation > li > a:hover, #navigation > li > a:focus {
-	color: white;
 }
 
 #jumbo-footer-1 {
@@ -68,10 +101,6 @@
 	padding: 0 5px;
 }
 
-.fa {
-	color: black;
-}
-
 .link-fa {
 	padding: 0 10px;
 }
@@ -88,16 +117,17 @@
 
 
 
+
+
+
+
+/********/
 /* Body */
+/********/
 #jumbo-yield {
 	background-color: #62716F;
 	margin-top: 50px;
 }
-
-#jumbo-yield p, #jumbo-yield h2, .hr-white hr, .hr-white i {
-	color: #F1ECE7;
-}
-
 
 hr, .hr-white > i, .hr-black > i {
 	padding: 0 40px;
@@ -109,8 +139,6 @@ hr, .hr-white > i, .hr-black > i {
 	display: inline-block;
 	margin-bottom: 15px;
 }
-
-
 
 @media only screen and (max-width: 509px) {
     #jumbo-yield {
@@ -125,3 +153,30 @@ hr, .hr-white > i, .hr-black > i {
 }
 
 
+.gray-back {
+	background-color: #bbb;
+}
+
+.back-forward-container {
+	padding-top: 10px;
+}
+
+td {
+	padding: 2px;
+}
+
+label, tr, .white-cell {
+	border-collapse: separate;
+	padding-right: 10px;
+}
+
+
+
+
+/********/
+/* Blog */
+/********/
+.blog-text-area {
+	width: 70%;
+	height: 50%;
+}

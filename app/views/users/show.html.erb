@@ -1,27 +1,42 @@
 <p id="notice"><%= notice %></p>
 
-<table>
-	<tr class="white-cell">
-		<td class="white-cell">
-			Name:
-		</td>
-		<td class="white-cell">
-			<%= @user.name %>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Email: 
-		</td>
-		<td>
-			<%= @user.email %>
-		</td>
-	</tr>
 
-</table>
+<div class="">
+	<table>
+		<tr class="white-cell">
+			<td class="white-cell">
+				Name:
+			</td>
+			<td class="white-cell">
+				<%= @user.name %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email: 
+			</td>
+			<td>
+				<%= @user.email %>
+			</td>
+		</tr>
+
+	</table>
 
 
-<div class="back-forward-container">
-	<%= link_to 'Edit', edit_user_path(@user), :class => "btn btn-default btn-sm" %>
-	<%= link_to 'Back', users_path, :class => "btn btn-default btn-sm" %>
+	<div class="back-forward-container">
+		<%= link_to 'Edit', edit_user_path(@user), :class => "btn btn-default btn-sm" %>
+		<%= link_to 'Back', users_path, :class => "btn btn-default btn-sm" %>
+	</div>
+</div>
+
+<div class="blog-container">
+	<%= link_to "New Blog", new_blog_path, :class => "btn btn-primary" %>
+	<% if !@user.blogs.empty? %>
+		<% @user.blogs.each do |blog| %>
+			<div class="blog">
+				<%= blog.created_at %>
+				<%= blog.entry %>
+			</div>
+		<% end %>
+	<% end %>
 </div>

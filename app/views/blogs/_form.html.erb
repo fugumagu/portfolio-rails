@@ -1,0 +1,27 @@
+<%= form_for(blog) do |f| %>
+  <% if blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+
+      <ul>
+      <% blog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_area :user_id, :class => "blog-text-area", :value => @blog.user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :entry %>
+    <%= f.text_area :entry, :class => "blog-text-area" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit nil, :class => "btn btn-primary" %>
+  </div>
+<% end %>
