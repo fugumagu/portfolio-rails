@@ -32,10 +32,16 @@
 <div class="blog-container">
 	<%= link_to "New Blog", new_blog_path, :class => "btn btn-primary" %>
 	<% if !@user.blogs.empty? %>
-		<% @user.blogs.each do |blog| %>
+		<% @user.blogs.reverse.each do |blog| %>
 			<div class="blog">
-				<%= blog.created_at %>
-				<%= blog.entry %>
+				<p>
+					<%= blog.created_at %>
+				</p>
+				<p>
+					<%= blog.entry %>
+				</p>
+				<%= link_to "Edit", edit_blog_path(blog), :class => "btn btn-default btn-sm" %>
+				<%= link_to "Delete", blog, :class => "btn btn-default btn-sm", :method => :delete %>
 			</div>
 		<% end %>
 	<% end %>
